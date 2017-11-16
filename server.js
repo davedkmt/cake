@@ -101,6 +101,6 @@ app.delete("/cakes/:id", function(req, res) {
 // app.put("/cakes/:id", function(req, res) {
 //
 // });
-app.listen(port, function() {
-  console.log("listening on port", port);
+app.listen(PORT, function() {
+  console.log("listening on port", PORT);
 });
