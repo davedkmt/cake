@@ -18,6 +18,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 var mysql = require("mysql");
+if (process.eny.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -25,6 +28,7 @@ var connection = mysql.createConnection({
   password: "",
   database: "cake_db"
 });
+}
 
 connection.connect(function(err) {
   if (err) {
