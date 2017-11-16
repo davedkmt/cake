@@ -1,0 +1,14 @@
+DROP DATABASE IF EXISTS cake_db;
+CREATE DATABASE cake_db;
+USE cake_db;
+
+CREATE TABLE cakes
+(
+id int NOT NULL AUTO_INCREMENT,
+cakeName varchar(255) NOT NULL,
+sleepy BOOLEAN DEFAULT false,
+PRIMARY KEY (id)
+);
+
+INSERT INTO cakes (cakeName) VALUES ('Tiramisu');
+INSERT INTO cakes (cakeName) VALUES ('Coffecake');
