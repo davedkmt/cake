@@ -4,7 +4,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 
 var app = express();
-var PORT = process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 // =========================================================
@@ -101,6 +101,6 @@ app.delete("/cakes/:id", function(req, res) {
 // app.put("/cakes/:id", function(req, res) {
 //
 // });
-app.listen(PORT, function() {
-  console.log("listening on port", PORT);
+app.listen(port, function() {
+  console.log("listening on port", port);
 });
