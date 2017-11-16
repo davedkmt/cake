@@ -6,7 +6,7 @@ CREATE TABLE cakes
 (
 id int NOT NULL AUTO_INCREMENT,
 cakeName varchar(255) NOT NULL,
-sleepy BOOLEAN DEFAULT false,
+orders BOOLEAN DEFAULT false,
 PRIMARY KEY (id)
 );
 
